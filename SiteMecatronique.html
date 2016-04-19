@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+	<head>
+		<!-- En-tête de la page -->
+		<meta charset="utf-8">
+		<title>Les cycles de conception et développement en mécatronique</title>
+		<!--[if lte IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="BIBI">
+		<meta name="description" content="La mécatronique c'est trop cool d'abord !!">
+
+
+		<link rel="icon" type="image/png" href="fond.jpg"/>
+		<link rel="stylesheet" media="screen" href="style-projet.css">
+	</head>
+
+	<body id="body">
+		<!-- page entiere -->
+		<a href="#body"><img id="haut" src="fleche-haut.png" alt=""/></a>
+		
+		<header>
+			<img id="logo" src="fond.png" alt=""/>
+		
+			<h1 id="topage">mécatronique</h1>
+			
+		
+		<nav id="sommaire">
+			
+			<ul>
+				<li><a href="#Hist">Un peu d'histoire</a></li>
+				<li><a href="#Compo">4 composantes</a></li>
+				<li><a href="#Concept">Conception</a></li>
+				<li><a href="#Meca">Mécatronicien</a></li>
+				<li><a href="#MetLies">Métiers liés</a></li>
+			</ul>
+		</nav>
+
+		</header>
+
+		<section id="section1">
+			<article id="Hist">
+				<h2>Un peu d'histoire</h2>
+				
+				<p>En 2005, dans son édition du centenaire, le <span id="dico">dictionnaire Larousse</span> a introduit le terme mécatronique. Il le définit ainsi :  Mécatronique (de mécanique et électronique), technique industrielle consistant à utiliser simultanément et en symbiose la mécanique, l'électronique, l'automatique et l'informatique pour la conception et la fabrication de nouveaux produits.<br /><br />
+
+
+Deux normes ont été élaborées par la suite, par des experts, pour homogénéiser les technologies au niveau national, européen et mondial. On voit donc la création d’une première <span id="n1">norme NF 01-010 : «Mécatronique vocabulaire»</span>, publiée en 2008, permettant de favoriser les échanges et la communication entre professionnels en disposant d’une terminologie commune. Ensuite a été publiée la <span id="n2">norme XP E 01-013 : «Conception en Mécatronique»</span>, qui formalise la démarche de conception et les différents niveaux de modèles requis. Elle est donc consacrée au cycle de vie et à la conception des produits mécatroniques.<br /><br />
+
+L’intérêt de ce domaine d’ingéniérie interdisciplinaire est de concevoir des systèmes automatiques, puissants et de permettre le contrôle de systèmes complexes.</p>
+			</article>
+			<div id="box_image">	
+				<img id="image" src="diag.png" alt="Diagramme mecatronique"/>
+			</div>
+			</section>
+			
+			<section>
+			<article id="Compo">
+				<h2>Les 4 composantes</h2>
+				<p> La mécatronique est la combinaison synergique et systémique de la mécanique, de l'électronique et de l'informatique en temps réel.</p>
+				<h3>L'électronique</h3>
+				
+				<p>L'électronique est une science qui permet l'étude de structures qui traitent des <span id="sig1">signaux électriques</span>, le but étant de transmettre ou de recevoir des données ou de l'énergie afin de créer des systèmes plus ou moins complexes et autonomes. Ces systèmes utilisent des sources d'énergie pour pouvoir fonctionner. En général, il est question d'association de sous-systèmes pour en créer de gros qui présentent la caractéristique de réaliser plusieurs tâches différentes et parfois en même temps.<br /><br />
+
+On peut trouver deux branches en électronique : l'électronique de signaux et l'électronique de puissance. <span id="elec1">L'électronique de puissance</span> s'apparente plus à de l'électrotechnique que de l'électronique. Elle comprend l'étude, la réalisation et la maintenance des composants électroniques utilisés en forte puissance; des structures des convertisseurs; de la commande de ces convertisseurs; des applications industrielles de ces convertisseurs. <span id="elec2">L'électronique de signaux</span>, utilise des signaux à basse puissance et a pour objet le traitement par des composants matériels (avec parfois mise en œuvre de logiciel interne) de ce qui est appelé "signaux électroniques".<br /><br />
+
+
+Un signal  est la représentation physique d'une information qui transite dans un système de la SOURCE jusqu'au DESTINATAIRE.</p>
+				<div id="box_image">	
+				<img id="image" src="Elec1.png" alt="Signaux"/>
+				
+				</div>
+		
+				<h3>L'automatique</h3>
+
+<p>L'automatique repose sur les mathématiques, la théorie du signal ( théories sur l'interpretation des signaux ) et l'informatique théorique.<br />
+Cela consiste à modéliser un problème donné selon un cahier des charges. Un système est ainsi representé, ce système comporte des entrées et des sorties. Les entrées correspondent aux variables manipulées et aux perturbations extérieures.<br />
+Exemple du four : l'entrée est le courant et la sortie la chaleur. Pour modéliser cela il faut passer par des équations pour montrer les interactions entre les différentes variables tout en ayant des conditions ( le four doit s'arrêter de chauffer, mais il doit chauffer à la chaleur suffisante ). On créer ainsi un régulateur permettant de réguler la chaleur.<br />
+				L'automatique permet de <span id="auto1">réguler le système, de l'automatiser</span>. Cette science est souvent associée à la cybernétique.<br />
+Un système automatisé est composé d'un opérateur et d'une partie opérative, celle-ci composé des actionneurs qui agissent selon les ordres de l'opérateurs et des capteurs qui renvoient un signal à l'opérateur pour qu'il puisse définir sa manière d'agir.</p>
+			<div id="box_image">	
+				<img id="image" src="Auto1.png" alt="Systeme automatise"/>
+			</div>
+			<p>Un système automatisé est un ensemble organisé dans un but fixé, c'est un système ayant été modifié par l'automatique qui effectue ainsi des actions <span id="auto2">ne nécessitant pas l'action humaine</span>.<br /><br />
+			Par exemple : Moteur de voiture; Four; Portillons..</p>
+
+			<h3>L'informatique</h3>
+			
+			<p>L'informatique est un domaine d'activité scientifique, technique et industriel concernant <span id="info1">le traitement automatique de l'information via l’exécution de programmes informatiques par des machines</span> : des systèmes embarqués, des ordinateurs, des robots, des automates, etc..<br />
+			Un système embarqué est défini comme un système électronique et informatique autonome, spécialisé dans une tâche bien précise.<br />Le terme désigne aussi bien le matériel informatique que le logiciel utilisé. Ses ressources sont généralement limitées. Cette limitation est le plus souvent d'ordre spatial (encombrement réduit) et énergétique (consommation restreinte).<br />
+			Le coeur artificiel, un exemple de système embarqué :</p>
+			<div id="box_image">	
+				<img id="image" src="Info1.png" alt="Systeme embarque"/>
+			</div>
+			<p>Ces champs d'application peuvent être séparés en deux branches, l'une, de nature théorique, qui concerne la <span id="info2">définition de concepts et modèles</span>, et l'autre, de nature pratique, qui s'intéresse aux <span id="info3">techniques concrètes d'implantation et de mise en œuvre sur le terrain</span>.<br />Certains domaines de l'informatique peuvent être très abstraits, comme la complexité algorithmique (l’étude d’un problème sous forme de relations mathématiques), et d'autres peuvent être plus proches d'un public profane.<br />Ainsi, les domaines où l'on utilise surtout les langages informatiques (théorie des langages qui décrit les langages formels) demeurent des domaines davantage accessible aux professionnels formés (description des ordinateurs et méthodes de programmation), tandis que les métiers liés aux interfaces homme-machine, qui sont moins abstraits, sont accessibles à un plus large public.<br />
+			De manière générale ce sont donc l'ensemble des applications de la science informatique, mettant en œuvre des matériels (chose utilisable, objet physique) (HARDWARE) et des logiciels (SOFTWARE).</p>
+			</article>
+			</section>
+			
+			<section>
+			<article>
+				<h2 id="Concept">La conception</h2>
+				
+				<p><strong>Mécatronique, une démarche d'intégration.</strong><br /><br /><span id="int1">L'intégration fonctionnelle :</span> consiste à rassembler les différentes fonctionnalités de systèmes en un grand système. Elle se caractérise par une diminution de l'encombrement et du nombre de composants à gérer.<br /><br />
+
+<span id="int2">L'intégration multi-domaine :</span> méthode de travail consistant à voir un projet au travers de plusieurs grandes disciplines : l'informatique, l'électronique, la mécanique et l'automatique. Cette conception multidisciplinaire implique que, dans un souci d'intégration, les différentes équipes techniques doivent travailler ensemble avec des liens étroits entre les différents domaines. Elle doit donc prendre en compte les couplages des informations et ce, avec un langage approprié. Les moyens de faciliter le travail d'équipe sont multiples, il y a notamment l'accès à un référentiel de données commun à l'ensemble des concepteurs d'un projet pour que chaque élément soit défini par son modèle partiel, décrivant sa forme géométrique, son comportement mécanique, électronique ou son système de traitement de données, et l'on doit pouvoir les visualiser séparément à tout moment. Ces modèles partiels peuvent également avoir différents niveaux de détail.<br /><br />
+
+<span id="int3">L'intégration physique 3D :</span> méthode découlant de l'intégration multi-domaine qui vise à « formater » les composants d'un produit de manière à limiter l'utilisation de matériaux, et donc le poids et la taille. Elle a pour conséquence, en outre, de donner une dimension spatiale à l’électronique qui doit s'adapter au formes complexe de la mécanique.</p>
+				
+				<p><strong>Processus de conception mécatronique.</strong><br /><br />La démarche appelée « cycle en V » est une démarche méthodique et structurée qui permet d'aider le concepteur tout au long de son projet, depuis le cahier des charges jusqu'aux tests de réception du système.<br />
+La démarche de "cycle en V" n'est pas entièrement représentative de la réalité de la phase de conception, mais elle permet de fixer l'ordre des étapes et le type de données échangées si la démarche était linéaire.<br /><br />
+
+	Dans le cycle de vie des produits mécatroniques, le soucis de préserver la cohérence de la modélisation et des données lors du passage d'un niveau à un autre traduit un autre type d'intégration : <span id="int4">l'intégration multi-niveau.</span> <br />
+
+	Un modèle unique ne permet cependant pas de répondre à toutes les questions. Différents modèles sont nécessaires pour décrire les différentes étapes de conception.<br />
+
+Pendant le cycle de conception, l'ingénieur va développer différentes versions qui dépendent de l'état de maturité de la conception système. Plusieurs vérification devront être faite avant d'obtenir la solution finale. Regarder sous différents angles est nécessaire pour faire face aux changements rapides des marchés actuels.<br /> La durée de développement des produits mécatroniques doit être la plus courte possible.<br /><br />
+
+	La branche descendante qui représente la partie d'étude et de conception du système est définie par 4 niveaux :<br /><br />
+
+
+	<span id="niv1">Niveau « analyse des besoins » :</span> traduire les exigences de l'utilisateur en spécifications techniques.<br /><br />
+
+	<span id="niv2">Niveau fonctionnel :</span> identifier les fonctions du système étudié dans un Cahier Des Charges Fonctionnel (CDCF), et en décrire les états successifs.<br /><br />
+
+	<span id="niv3">Niveau logique/organique :</span> à ce niveau, l'architecture logique est définie (lois physiques, lois de commande avec les paramètres d'entrée et de sortie) et les organes qui vont pouvoir remplir les fonctions précédentes (allocation de composants) sont identifiés.<br /><br />
+
+	<span id="niv4">Niveau « géométrique »-physique/conception détaillée :</span> finalisation du choix des composants, des plans du produit (géométrie 3D) et des outils de production. Le concepteur finalise la maquette numérique (2D ou 3D) par l'optimisation de la forme, le dimensionnement multi-physique des composants.<br /></p>
+	
+			<p><strong>Le travail en équipe</strong><br /><br /><span id="dem1">L'ingénierie collaborative</span> repose sur l'échange de données techniques et la définition d'environnements de référence afin de <span id="dem3">favoriser la collaboration entre les différents acteurs et outils intervenant dans la création de produits</span>. Cela nécessite le partage des données et par conséquent la standardisation des modèles de données mis en œuvre.<br /><br />
+	<span id="dem2">Les systèmes PLM</span> (Product Lifecycle Management ) s'imposent dans ce contexte, comme outils stratégiques <span id="dem4">d'harmonisation de la gestion collaborative des données et connaissances</span> de l'entreprise étendue. Ils imposent la modélisation, la capture, la manipulation, l'échange et l'utilisation de l'information dans tous les processus décisionnels tout au long du cycle de vie du produit, dont les phases de conception, et ce quels que soient les domaines d'application.<br /><br />
+
+	C'est dans ce contexte que différents organismes, et plus particulièrement l'ISO (Organisation internationale de normalisation), mènent des travaux de normalisation. L'ISO a lancé le projet de norme PDES/STEP (Product Data Exchange Specification/STandard for the Exchange of Product model), la norme STEP – ISO10303 portant sur la représentation et l'échange de données de produits et visant à intégrer les processus de conception, de développement, de fabrication et de maintenance de ces derniers.</p>
+			
+			<p><strong>Les différentes méthodologies</strong><br /><br />De manière à réduire le délai de mise sur le marché (time to market ) et les coûts de conception des systèmes mécatroniques et de garantir leur qualité de conception ainsi que leur fiabilité, il est nécessaire de disposer de méthodes et d'outils d'aide à la conception offrant de meilleurs mécanismes d'abstraction, de structuration et de réutilisabilité. Ces méthodes et outils multi-domaines devraient permettre de vérifier, dès l'étape de conception, la faisabilité des systèmes et la validité de leurs propriétés.<br /><br />Aucune méthodologie n'est universelle, ce sont souvent des éléments de contexte du projet, tels que sa taille, ses aspects les plus critiques et les choix technologiques réalisés dans le cadre de son implémentation, qui régissent le choix d'une méthodologie particulière.<br /><br />
+
+
+<span id="an1">L'analyse fonctionnelle</span> consiste à raisonner en termes de besoins à satisfaire, exprimés sous forme de fonctions à remplir avec des critères de valeur dans un environnement donné. Elle permet la description synthétique des modes de fonctionnement du système et la connaissance des fonctions à garantir. Un certain nombre de techniques de cette famille existent, dont les fondements reposent sur l'expression du besoin du système à étudier, et sa spécification technique comportant essentiellement :<br />
+
+	les fonctions et leurs caractéristiques ;
+
+	les performances avec des critères de valeurs attendues ;
+
+	les contraintes extérieures.<br /><br />
+
+
+
+D'une manière générale dans les <span id="an3">méthodes orientés flots de données</span>, le système est décrit comme constitué de plusieurs entités reliées entre elles par des flux de données. L'information qui circule dans le réseau constitué de ces entités est transformée par les différentes entités qu'elle traverse.<br /><br />
+
+Les méthodes les plus représentatives de cette famille sont présentées ici, à savoir : <span id="an2">la méthode SADT, la méthode SA-RT et l'approche EFFBD (Enhanced Functionnal Flow Block Diagram)</span>. La plupart de ces méthodes, élaborées dans des contextes spécifiques, sont donc très efficaces lorsqu'elles sont utilisées dans leur environnement originel, mais montrent rapidement leurs limites pour d'autres domaines d'utilisation.<br /><br /><span id="effbd">Un EFFBD :</span></p>
+			<div id="box_image">	
+				<img id="image" src="dem1.png" alt="EFFBD"/>
+			</div>
+			<p><strong>Un exemple :</strong>	
+	SADT tend à séparer la phase d'analyse de la phase de conception en utilisant une approche de décomposition descendante (top-down ), modulaire et hiérarchique. La modélisation avec SADT commence par une description, la plus générale possible, du système étudié. Le système est ensuite de plus en plus spécifié.<br /><br />
+
+
+
+
+
+<span id="an4">L'approche orientée objet</span> considère le logiciel comme une collection d'objets caractérisés par leurs propriétés et leur comportement.<br />
+
+L'approche objet favorise l'analyse descendante (top-down ) par raffinement du système en termes d'objets et également une analyse de type montante (bottom-up ) dans laquelle on peut concevoir de nouvelles fonctionnalités et les encapsuler dans des packages ou des objets, qu'il sera par la suite possible d'intégrer dans des systèmes plus importants par composition. On peut alors soit raffiner un système en se focalisant sur le découpage en objets et non plus en fonctions, soit lorsqu'un objet n'est pas disponible, concevoir ce dernier comme un assemblage plus ou moins complexe d'éléments réutilisables.<br /><br />
+
+
+
+<span id="an5">Les méthodes d'ingénierie système</span> basées sur les modèles sont basées sur l'approche dite MBSE (Model-Based System Engineering ) qui consiste à utiliser les modèles comme support de réalisation des activités techniques d'ingénierie. Elles requièrent une gestion rigoureuse et cohérente de toutes les informations d'ingénierie qui ont été créées et utilisées durant le cycle de vie complet des produits.<br /><br />
+
+
+
+<strong>Un exemple :</strong><br /><br />
+
+	<strong>La méthode Harmony</strong> de IBM/Rational est une extension du processus Harmony destiné au départ uniquement à la conception de logiciel. Le processus mis en œuvre dans la méthode Harmony-SE (System Engineering) est globalement descendant. Harmony-SE suit un cycle en spirale*, adapté du processus ROPES (Rapid Optimizing Process for Embedded Systems), pour lequel les itérations de conception sont des étapes de spécification, de conception, de modification des exigences incomplètes ou ambiguës, d'implémentation et enfin de validation.<br />
+
+	Chacune des étapes de ce processus, la spécification comprise, est réalisée via l'exécution du modèle et de sa validation. Les itérations correspondent à un enrichissement des fonctionnalités du système par l'analyse et le raffinement des cas d'utilisation qui permettent progressivement d'enrichir le modèle de solution et de spécifier les caractéristiques des composants.<br /><br />
+
+
+<span id="an6">Les méthodes formelles</span> définissent des techniques d'analyse des systèmes qui se situent en amont des méthodes bien connues de simulation et de test. La conception des systèmes mécatroniques fiables nécessite l'utilisation d'une approche méthodologique reposant sur une description formelle du comportement du système à concevoir. Cette description sert alors de point de départ pour les autres phases de conception. Les transformations successives conduisant à l'implémentation de composants doivent permettre de s'assurer de la correction de composants obtenus par rapport à la spécification initiale. Les transformations appliquées doivent préserver toutes les propriétés fonctionnelles et non fonctionnelles du système (sûreté, performances, vivacité...).<br /><br />
+
+Modéliser l'évolution conjointe au cours du temps de grandeurs continues et discrètes revient généralement à décrire un <span id="an7">Système Dynamique Hybride</span>.<br />Il existe un grand nombre de formalismes permettant la modélisation des systèmes dynamiques hybrides, parmi lesquels on peut citer les automates hybrides, les réseaux de Pétri hybrides(un outil graphique et mathématique qui permet de simuler et modéliser des systèmes), les statecharts (*), etc.<br />Les systèmes hybrides fournissent un cadre de modélisation pertinent dans de nombreux domaines, comme par exemple l'automobile, l'avionique, la robotique, la génétique, etc.. car ils permettent de décrire assez simplement des comportements complexes résultant du couplage entre des dynamiques continues et événementielles.<br />Les dynamiques continues sont souvent associées à l'évolution de grandeurs physiques : vitesses, débits, tensions, courants, concentrations, températures, etc.<br />Les dynamiques événementielles sont quant à elles souvent associées à des changements de modes de fonctionnement : butées, ouverture/fermeture de vannes ou de composants modélisés en tout ou rien telles que diodes et transistors idéalisés ; plus largement, les dynamiques événementielles permettent de représenter le séquencement de modes de fonctionnement (normaux ou défaillants) et/ou d'actions à accomplir (séquences de démarrage, d'arrêt, reconfigurations, etc..).</p>
+			</article>
+			</section>
+			
+			<section>
+			<article>
+				<h2 id="Meca">Le mécatronicien</h2>
+				
+				<p>Au carrefour de la mécanique, de l'électronique et de l'informatique, le mécatronicien doit <span id="meca1">concevoir, installer et maintenir des systèmes " intelligents ",  pour améliorer les performances de tous types d'équipements et créer des ensembles automatisés miniaturisés</span>. Il suit l'intégralité du projet sur le plan technique, mais ses missions peuvent être très différentes en fonction du secteur d'activité et de l'entreprise dans lesquels il exerce.<br />La polyvalence et le goût du travail en équipe pluridisciplinaire sont indispensables car il est amené à assurer le lien entre les équipes spécialisées dans un domaine.<br /><br />
+
+
+<span id="meca3">De nombreux secteurs d'emploi :</span><br />
+Les mécatroniciens exercent dans de nombreux secteurs d'activité : automobile, aéronautique et spatial, naval, ferroviaire, mécanique, métallurgie, électricité, électronique, numérique, informatique, équipements énergétiques... dans des grandes entreprises comme des PME (petites et moyennes entreprises).<br /> 
+Les besoins sont particulièrement importants dans la maintenance où l'on recrute également au niveau technicien. La dernière enquête emploi du Syndicat des industriels de la mécatronique (Artema) fait état de 28 200 salariés.<br /><br />
+ 
+<span id="meca4">Évolution transversale :</span><br />
+Le mécatronicien peut, après quelques années d'expérience, se diriger vers <span id="meca2">la production, les méthodes ou encore la Recherche&Développement</span>. S'il reste dans sa fonction, il prendra petit à petit en charge des projets de plus grande ampleur, ou deviendra chef de projet, d'autant plus facilement qu'il aura une vision globale des produits développés, puisqu'il les suit de la conception jusqu'à l'exploitation. Le mécatronicien (niveau technicien supérieur) peut prétendre à un poste d'ingénieur mécatronicien après plusieurs années de pratique.</p>
+			</article>
+			</section>
+			
+			<section>
+			<article>
+				<h2 id="MetLies">Les métiers liés</h2>
+				
+				<p>Principium autem unde latius se funditabat, emersit ex negotio tali. Chilo ex 
+				vicario et coniux eius Maxima nomine, questi apud Olybrium ea tempestate urbi 
+				praefectum, vitamque suam venenis petitam adseverantes inpetrarunt ut hi, quos 
+				suspectati sunt, ilico rapti conpingerentur in vincula, organarius Sericus et 
+				Asbolius palaestrita et aruspex Campensis.</p>
+			</article>
+		</section>
+		
+		<footer>
+			<div>
+				<h2 id="Piedpage1">Pied de page</h2>
+				
+				<p>Eo adducta re per Isauriam, rege Persarum bellis finitimis inligato repellenteque
+				a conlimitiis suis ferocissimas gentes, quae mente quadam versabili hostiliter eum saepe
+				incessunt et in nos arma moventem aliquotiens iuvant, Nohodares quidam nomine e numero 
+				optimatum, incursare Mesopotamiam quotiens copia dederit ordinatus, explorabat nostra 
+				sollicite, si repperisset usquam locum vi subita perrupturus.</p>
+			</div>
+			
+			<div>
+				<h2 id="Piedpage2">Pied de page 2</h2>
+				
+				<p>Accedebant enim eius asperitati, ubi inminuta vel laesa amplitudo imperii dicebatur,
+				et iracundae suspicionum quantitati proximorum cruentae blanditiae exaggerantium incidentia 
+				et dolere inpendio simulantium, si principis periclitetur vita, a cuius salute velut filo 
+				pendere statum orbis terrarum fictis vocibus exclamabant.</p>
+			</div>
+		</footer>
+	</body>
+</html>
