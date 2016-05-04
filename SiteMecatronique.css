@@ -1,0 +1,185 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	font-size: 16px;
+	font-family: Avantgarde, Sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	background-position: 50% 100%;
+	background-repeat: repeat;
+	background-image: url(img1.png);
+	
+}
+
+header {
+	width: 100%;
+	height: 270px;
+	position: absolute;
+	background-attachment: fixed;
+	background-image: url(fond-page.jpg);
+	background-position: 0 -500px;
+	background-repeat: no-repeat;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 38px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family: Avantgarde, Sans-serif;
+	padding-top: 42px;
+}
+
+nav {
+	padding-top: 5px;
+	position: relative;
+	top: 10px;
+}
+
+section {
+	width: 85%;
+	position: absolute;
+	top: 300px;
+	left: 50px;
+	padding-right: 90px;
+	padding-bottom: 150px;
+	display: none;
+}
+
+p {
+	padding: 12px;
+	font-size: 18px;
+	background-color: lightcyan;
+	position: relative;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.image {
+	width: 200px;
+	height: 140px;
+    position: relative;
+    left: calc((100% - 200px) / 2.5);
+	cursor: pointer;
+	transition: all, 1s, ease;
+}
+
+.image:hover {
+	width: 40%;
+	height: 40%;
+}
+
+.texte_gras {
+	font-weight: bold;
+}
+
+.souligner {
+	text-decoration: underline;
+}
+
+#vers_top_page {
+	position: fixed;
+	top: 85%;
+	right: 45px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+#top-page::first-letter {
+	color: #add8e6;
+	font-size: 60px;
+	font-family: Avantgarde, Sans-serif;	
+}
+
+#logo {
+	position: relative;
+	top: 30px;
+	left: 50px;
+	float: left;
+	width: 192px;
+	height: 140px;
+	max-width: 100%;
+}
+
+#nav_bgd {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+#menu, #menu ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+
+#menu li{
+	display:inline-block;
+	position:relative;
+	border-radius:8px 8px 0 0;
+}
+
+#menu ul li{
+	display:inherit;
+	border-radius:0;
+}
+
+#menu ul li:hover{
+	border-radius:0;
+}
+
+#menu ul li:last-child{
+	border-radius:0 0 8px 8px;
+}
+
+#menu ul{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	transition: .8s all .3s;
+}
+
+#menu li:hover ul{
+	max-height:15em;
+}
+
+#Acc {
+	width: 650px;
+	height: 400px;
+	position: relative;
+	left: calc((100% - 650px) / 2);
+	font-size: 1.5em;
+	padding: 0 0 20px 0;
+}
+
+#Acc figure {
+	width: 650px;
+	height: 400px;
+	margin: 0;
+}
+
+#Acc figure img {
+	width: 650px;
+	height: 400px;
+}
+
+
+:target {
+	display: block;
+}
