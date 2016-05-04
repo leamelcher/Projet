@@ -5,7 +5,7 @@
 }
 
 html {
-font-family: dolce_vita;/*'Sanchez', serif, Coolvetica, sans-serif;*/
+font-family: dolce_vita;
 font-size: 15px;
 }
 
@@ -36,7 +36,7 @@ font-size: 15px;
 font-style: normal;
 text-transform: uppercase;
 letter-spacing: 0.25em;
-font-family: 'Sanchez', serif, Coolvetica, sans-serif; /* OU Adam*/
+font-family: 'Sanchez', serif, Coolvetica, sans-serif;
 }
 
 #nav_logo {
@@ -259,7 +259,7 @@ height:60px;
 }
 
  .divContact img:hover {
-/*transform: rotate(360deg); /*a voir si on laisse juste le zoom */
+
 width:90px;
 height:90px;
 
